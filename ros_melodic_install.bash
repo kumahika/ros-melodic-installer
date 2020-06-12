@@ -9,7 +9,7 @@ sudo apt -y install ros-melodic-desktop-full
 cat rosBashrc >> /home/$USER/.bashrc
 echo '.bashrc setting completed.'
 
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 
 sudo apt install -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 
@@ -17,6 +17,7 @@ sudo apt install python-rosdep
 
 rosdep update
 sudo rosdep init
+sudo apt-get install ros-melodic-catkin
 
 cd
 mkdir -p ~/catkin_ws/src
