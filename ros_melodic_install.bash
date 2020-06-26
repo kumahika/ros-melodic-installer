@@ -17,11 +17,11 @@ sudo apt install python-rosdep
 
 rosdep update
 sudo rosdep init
-sudo apt-get install ros-melodic-catkin
+sudo apt install -y ros-melodic-catkin python-catkin-tools
 
 cd
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
 catkin_init_workspace
 cd ..
-catkin_make
+catkin build
